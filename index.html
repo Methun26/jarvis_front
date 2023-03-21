@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="coderell" content="width=device-width, initial-scale=1.0">
+    <title>MADC</title>
+    <link rel="icon" href="./JARVIS.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Tweenmax GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- BootStrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body  style="background-color: #000;color: #48C9B0;">
+    <div class="container">
+
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <div class="nav">
+            <div class="logo" style="z-index: 1;text-align: left;">Mobile App Development Club<span class="reg">&reg;</span></div>
+            <!-- <div class="menu"><i class="fa fa-bars"></i></div>
+            <div class="search"><i class="fa fa-search"></i></div>
+            <div class="bag"><i class="fa fa-shopping-bag"></i></div> -->
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="size">
+                    <ul>
+                        <span>Date :</span>
+                        <li>05.</li>
+                        <li>04.</li>
+                        <li>23</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6" >
+                <img src="./JARVIS.png" alt="" class="product-img">
+                <div class="product-desc">
+                    <!-- <p style="font-size: medium;"><span style="display: flex;">Kongu Engineering College</span></p> -->
+                    <button>Register Now!</button>
+                </div>
+              </div>
+            <div class="col-md-3" >
+                <div class="media">
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><a href="https://www.instagram.com/madc_of_kec/?igshid=ZDdkNTZiNTM=" style="color: #48C9B0;"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/918825410420" class="icon-float" target="_blank" style="color: #48C9B0;"> <i class="fa fa-whatsapp whatsapp-icon"></i></a></li>
+                        
+                    </ul>
+                    <div class="mediaR" style="text-align: right;">
+                        <ul>
+                            <li><a href="#" style="color: #48C9B0;text-decoration: none;">Home</a></li>
+                            <li><a href="#" style="color: #48C9B0;text-decoration: none;">Events</a></li>
+                            <li><a href="#" style="color: #48C9B0;text-decoration: none;">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+
+        <div class="product-text">
+            <!-- <h1 class="product-title">Kongu Engineering College</h1> -->
+            <!-- <img src="./JARVIS.png" alt="Error" class="product-title" style="width: 50%;height: 80%;"> -->
+        </div>
+
+        
+
+        
+
+       
+        
+    </div>
+
+    <script>
+        TweenMax.to('.first', 1.5, {
+            delay: .2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.second', 1.5, {
+            delay: .4,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.third', 1.5, {
+            delay: .6,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.logo', 1, {
+            delay: 1,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.menu', 1, {
+            delay: 1.2,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.to('.mediaR', 1.5, {
+            delay: 1,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.search', .8, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.bag', 1, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom('.media ul li', 1, {
+            delay: 2,
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from('.size', 1, {
+            delay: 1.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom('.size ul li', .3, {
+            delay: 2,
+            opacity: 0,
+            y: 20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        TweenMax.from('.bottom-right ul li:first-child', .5, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-right ul li:last-child', .6, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-img', 1, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.product-title', 3, {
+            delay: 2.2,
+            opacity: 0,
+            y: 50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-img', 1, {
+            delay: 2.2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc p', 3, {
+            delay: 2.5,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc button', 3, {
+            delay: 2.8,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+    </script>
+</body>
+
+</html>
